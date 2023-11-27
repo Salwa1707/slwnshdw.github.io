@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>services </title>
+	<link rel="stylesheet" type="text/css" href="services.css"/>
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<section>
+        <nav>
+            <ul class="menuItems">
+                <li><a href="INDEX.html" data-item='Home'>Home</a></li>
+                <li><a href="SERVICES.html" data-item='Contact Us'>Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+	<div class="container">
+
+<fieldset>
+<h1>How can we help you?</h1>
+<h4>Kindly fill in the feilds below:</h4>
+<form method="Post" onsubmit="return validateForm()" id="myForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+    <label for="age">Age:</label><br>
+    <input type="text" id="age" name="age" placeholder="Enter your age" required><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+
+    <div class="box"></div>
+
+    <h>What are you interested in?</h>
+    <select name="interest">
+        <option value="Select" selected>~Select Option~</option>
+        <option value="Audiology">Audiology</option>
+        <option value="Birth Control Teleconsult">Birth Control Teleconsult</option>
+        <option value="Quit Smoking Service">Quit Smoking Service</option>
+        <option value="Medication Counseling">Medication Counseling</option>
+        <option value="Immunizations">Immunizations</option>
+        <option value="Other">Other</option>
+    </select><br><br>
+
+    <h>How would you like to be contacted?</h>
+    <select name="contactMethod">
+        <option value="Phone Call" selected>Phone Call</option>
+        <option value="WhatsApp">WhatsApp</option>
+        <option value="Messages">Messages</option>
+        <option value="Email">Email</option>
+    </select><br><br>
+
+    <label>
+        <input type="checkbox" id="agree" name="agree" required>
+        I agree to have my information used solely for medical checks.
+    </label><br>
+
+    <button type="submit" onclick="submitform()">Submit</button>
+</form>
+
+
+
+</fieldset>
+</form>
+</body>
+
+</html>
